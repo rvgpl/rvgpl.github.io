@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            rvgpl
 tagline:          
 description:      'A blog of a software engineer who codes for bread and does photography for butter.'
-url: ravigopal.in  
+url: http://ravigopal.in  
 baseurl:          /
 
 author:
