@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            rvgpl
+tagline:          
+description:      'A blog of a software engineer who codes for bread and does photography for butter.'
+url:   http://ravigopal.in           
+baseurl:          /
+
+author:
+  name:           'Ravigopal Kesari'
+  url:            https://twitter.com/rvgpl
+
+paginate:         1
+
+# Custom vars
+version:          2.1.0
+
