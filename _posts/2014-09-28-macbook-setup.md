@@ -1,8 +1,9 @@
 ---
-layout: post-no-feature
+layout: post
 title: Macbook Setup for Development
+date: 2014-09-28
 ---
- Recently I started  using Mac OSX for my development needs, got myself a 2014 version Macbook Air last month. It has been a month and it is my new precious. I get around ten hours of charge which is phenomenal. 
+<p class="intro"><span class="dropcap">R</span>ecently I started  using Mac OSX for my development needs, got myself a 2014 version Macbook Air last month. It has been a month and it is my new precious. I get around ten hours of charge which is phenomenal. 
 
  After a lot of searching and recommendations about which applications to use , this is how I ended up setting up  my macbook for web development.  
 

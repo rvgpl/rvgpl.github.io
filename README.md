@@ -1,3 +1,3 @@
 ##ravigopalkesari.com
 
-A personal blog built using Jekyll
+Personal blog using Jekyll

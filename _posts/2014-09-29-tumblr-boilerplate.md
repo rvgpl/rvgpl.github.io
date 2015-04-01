@@ -1,9 +1,10 @@
 ---
-layout: post-no-feature
+layout: post
 title: A boilerplate for Tumblr theme development
+date:   2014-09-29
 ---
 
-A few days back a friend of mine wanted to get back to blogging, even though I love the minimal setup of  `Jekyll` and Github Pages, it is hard to recommed it for everyone. 
+<p class="intro"><span class="dropcap">A</span> few days back a friend of mine wanted to get back to blogging, even though I love the minimal setup of  `Jekyll` and Github Pages, it is hard to recommed it for everyone. </p>
 
 After a bit playing around the web, decided [Tumblr](http://www.tumblr.com/) was the platform for him. Tumblr is great for blogging, it supports various types of posts and also has an option to write your posts in `Markdown`. There are tons of themes out there for tumblr but almost all of them were about sharing photos and image galleries. So I decided to build a theme for him.
 
@@ -16,7 +17,7 @@ This boilerplate supports all types of posts that Tumblr allows, you can downloa
 <h3> Custom Theme</h3>
 Here is the theme I developed for my friend,
 
-![Custom Tumblr theme](/images/post-images/2014-09-29-theme-design.png)
+![Custom Tumblr theme](/images/2014-09-29-theme-design.png)
 
 I added this theme to my [Behance Portfolio](https://www.behance.net/gallery/20087509/Minimal-Blog-Tumblr-Theme), so if you like my work do appreciate it there.
 
