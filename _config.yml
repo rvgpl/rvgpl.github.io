@@ -1,24 +1,58 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+title:            Ravigopal Kesari
+tagline:          Coding for bread, photography for butter.
+description:      
+canonical: http://ravigopalkesari.com
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# Owner/author information
+owner:
+  name:           Ravigopal Kesari
+  email:          hello@ravigopalkesari.com
+  twitter:        rvgpl
+  github:         rvgpl
+  instagram:      _rvgpl_
+  dribbble:       rvgpl
+  disqus:         rvgpl
+  location:       "Bangalore, India"
+  # Plug in your disqus shortname!
 
-# Setup
-title:            rvgpl
-tagline:          
-description:      'A blog of a software engineer who codes for bread and does photography for butter.'
-url: http://ravigopal.in  
-baseurl:          /
 
-author:
-  name:           'Ravigopal Kesari'
-  url:            https://twitter.com/rvgpl
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Blog
+    url: /blog  
+  - title: Photos
+    url: http://flickr.com/photos/rvgpl
+    external: true
 
-paginate:         1
 
-# Custom vars
-version:          2.1.0
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Kolkata
+future:      true
+highlighter: pygments
+markdown:    kramdown
 
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+sass:
+    style: :compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp"]

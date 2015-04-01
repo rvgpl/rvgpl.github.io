@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-no-feature
 title: A boilerplate for Tumblr theme development
 ---
 
@@ -16,7 +16,7 @@ This boilerplate supports all types of posts that Tumblr allows, you can downloa
 <h3> Custom Theme</h3>
 Here is the theme I developed for my friend,
 
-![Custom Tumblr theme](/images/2014-09-29-theme-design.png)
+![Custom Tumblr theme](/images/post-images/2014-09-29-theme-design.png)
 
 I added this theme to my [Behance Portfolio](https://www.behance.net/gallery/20087509/Minimal-Blog-Tumblr-Theme), so if you like my work do appreciate it there.
 

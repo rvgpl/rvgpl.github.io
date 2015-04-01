@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-no-feature
 title: Macbook Setup for Development
 ---
  Recently I started  using Mac OSX for my development needs, got myself a 2014 version Macbook Air last month. It has been a month and it is my new precious. I get around ten hours of charge which is phenomenal. 
