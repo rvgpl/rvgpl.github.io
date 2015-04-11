@@ -1,26 +1,23 @@
 ---
 layout: default
-title: Ravigopal Kesari
+title: Life & Works of Ravigopal Kesari
+nav: home
 ---
 
-      <div id="home">
-        <h1 class="pageTitle">Recent Posts</h1>
-        <ul class="posts noList">
-          {% for post in paginator.posts %}
-            <li>
-            	<span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
-            	<h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-            	<p class="description">{% if post.description %}{{ post.description  | strip_html | strip_newlines | truncate: 250 }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 250 }}{% endif %}</p>
-            </li>
-          {% endfor %}
-        </ul>
-        <!-- Pagination links -->
-        <div class="pagination">
-          {% if paginator.previous_page %}
-            <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous button__outline">Newer Posts</a>  
-          {% endif %} 
-          {% if paginator.next_page %}
-            <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next button__outline">Older Posts</a>
-          {% endif %}
-        </div>
-      </div>
+
+<div class="hey">
+  <h1>I love making things <strong><span>better</span></strong>, more <strong><span>useful</span></strong> and <span>fun</span>. It doesn’t matter if that might be big or small.</h1>
+</div>
+
+
+<div class="skills">
+<small style="color:#b5b5b5;">Spend most of my time everyday on</small>
+  <p><strong>HTML5+CSS3. Javascript. jQuery. Express + node.js. </strong><br>
+  UI/UX prototyping <strong>&</strong> design with <a href="http://bohemiancoding.com/sketch">Sketch</a> and <a href="http://framerjs.com/">framer.js</a></p>
+  <p>I click <a href="http://photos.ravigopalkesari.com/">photographs</a>, make little <a href="http://youtube.com/rvgpl/">videos</a> and fiddle with <a href="https://www.raspberrypi.org/">Raspberry Pi</a> in my free time.</p>
+  <p>Tweet to me <a href="http://twitter.com/rvgpl/"> @rvgpl</a> or shoot a mail to <a href="mailto:hello@ravigopalkesari.com">hello@ravigopalkesari.com</a>.
+</div>
+
+<footer class="footer">
+  <p>2015 | <a href="/colophon">Colophon</a>.</p>
+</footer>

@@ -1,10 +1,32 @@
-{% include head.html %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Ravigopal Kesari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/icons/icons.css" type="text/css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+  </head>
+  <body>
+    <header class="header">
+      <h1><a href="/">Ravigopal Kesari<a></h1>
+      <nav class="nav">
+        <ul>
+          <li{% if page.nav == 'articles' %} class="here"{% endif %}><a href="/articles">Articles</a></li>
+          <li{% if page.nav == 'projects' %} class="here"{% endif %}><a href="/projects">Projects</a></li>
+          <li{% if page.nav == 'photos' %} class="here"{% endif %}><a href="/photos">Photos</a></li>
+        </ul>
+      </nav>
+      <ul class="icons">
+        <li><a class="twitter" href="https://twitter.com/rvgpl" title="Twitter"><i class="icon-twitter"></i></a></li>
+        <li><a class="github" href="https://github.com/rvgpl" title="Github"><i class="icon-github4"></i></a></li>
+        <li><a class="dribbble" href="https://dribbble.com/rvgpl" title="Dribbble"><i class="icon-dribbble"></i></a></li>
+        <li><a class="instagram" href="https://instagram.com/_rvgpl_" title="Instagram"><i class="icon-instagram"></i></a></li>
+      </ul>
+    </header>
+    {{ content }}
 
-	<div class="content">
-		<div class="container">
-			{{ content }}
-		</div>
-	</div><!-- end .content -->
-
-{% include footer.html %}
-
+  </body>
+</html>

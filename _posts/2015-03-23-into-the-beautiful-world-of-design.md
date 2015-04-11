@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Into the beautiful world of design
-date:  2015-03-23
+introduction: Thoughts on my journey learning to design
+category: Design
 ---
 
-<p class="intro"><span class="dropcap">G</span>ood design is not pixel perfect buttons or interfaces, it is all about the little affordances you present to users when they click the button or while interacting with the application</p>
+Good design is not pixel perfect buttons or interfaces, it is all about the little affordances you present to users when they click the button or while interacting with the application.
 
 ![design-quote](/images/2014-03-23-design-quote.jpeg)
 

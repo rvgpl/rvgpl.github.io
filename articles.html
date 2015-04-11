@@ -1,0 +1,26 @@
+---
+layout: default
+title: Articles - Ravigopal Kesari
+nav: articles
+---
+
+<div class="articles">
+
+<h1 class="title">Essays cover <strong><span>thoughts</span></strong> on <em>programming</em> , <em>design</em> , <em>photography</em>  <span>&#38;</span> <em>life</em>.</h1>
+  <div class="list">
+      {% for post in site.posts %}
+      <article class="post {{ post.category | downcase }}">
+        <p class="post-info">
+          <em class="post-date">{{ post.date | date_to_string }}</em>
+          <strong class="post-category">{{ post.category }}</strong>
+        </p>
+        <h2 class="post-title">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        {% if post.introduction %}
+          <p class="post-introduction">{{ post.introduction }}</p>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</div>

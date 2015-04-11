@@ -1,18 +1,4 @@
-name: Ravigopal Kesari
-description: Personal blog of Ravigopal Kesari
-
-url: 
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-
 markdown: redcarpet
+permalink: pretty
 highlighter: pygments
-paginate: 5
 
-navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
