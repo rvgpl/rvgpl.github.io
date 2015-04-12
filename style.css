@@ -21,7 +21,7 @@ abbr, acronym{ border: 0;}
 */
 
 html{ font-size: 20px; height: 100%; overflow-y: scroll;}
-body{ background: #fafafa; font: 1em/1.5  'Open Sans', Arial, sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
+body{ background: white; font: 1em/1.5  'Open Sans', Arial, sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
 a{ border-bottom: 2px solid #ededed; color: #db4e44; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
 a:hover{ border-bottom-color: #db4e44;}
