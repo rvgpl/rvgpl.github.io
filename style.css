@@ -21,7 +21,7 @@ abbr, acronym{ border: 0;}
 */
 
 html{ font-size: 20px; height: 100%; overflow-y: scroll;}
-body{ background: white; font: 1em/1.5  'Open Sans', Arial, sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
+body{ background: white; font: 1em/1.5  'Open Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
 a{ border-bottom: 2px solid #ededed; color: #db4e44; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
 a:hover{ border-bottom-color: #db4e44;}
@@ -113,7 +113,7 @@ img{ max-width: 100%;}
 .post-content ol{ margin: 1em 0 1em 1.5em;list-style: disc;}
 /*.post-content figure{ margin: 2em; text-align: center;}
 .post-content figcaption{ color: #93a1a1; font-size: 0.8125rem; margin-top: 1em;}
-.post-content figure img{max-width:80%;}*/
+.post-content figure img{max-width:80%;}*
 .post-content ul li{ position:relative;}
 /*.post-content ul li:before{ color: #93a1a1; content: '-'; left: -1.25rem; position: absolute; top: 4px;}*/
 .post-content blockquote{ border-left: 4px solid #db4e44; color: #7a7a7a; font-style: italic; margin: 2rem 0; padding: 0 2rem;}
