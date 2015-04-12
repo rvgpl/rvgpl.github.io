@@ -7,7 +7,9 @@ category: Design
 
 Good design is not pixel perfect buttons or interfaces, it is all about the little affordances you present to users when they click the button or while interacting with the application.
 
+<figure>
 ![design-quote](/images/2014-03-23-design-quote.jpeg)
+</figure>
 
 A friend asked me to build a web application to store and retrieve a set of student information for events. I thought it would be a nice weekend project and obliged to create one. A simple CRUD application with PHP, SQL and Bootstrap. I wanted to build it python but he wanted it in PHP as finding a PHP developer to maintain is easier.
 

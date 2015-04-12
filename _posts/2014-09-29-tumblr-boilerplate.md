@@ -18,7 +18,7 @@ This boilerplate supports all types of posts that Tumblr allows, you can downloa
 ##Custom Theme
 Here is the theme I developed for my friend,
 
+<figure>
 ![Custom Tumblr theme](/images/2014-09-29-theme-design.png)
-
+</figure>
 I added this theme to my [Behance Portfolio](https://www.behance.net/gallery/20087509/Minimal-Blog-Tumblr-Theme), so if you like my work do appreciate it there.
-
