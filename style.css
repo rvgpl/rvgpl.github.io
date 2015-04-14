@@ -22,9 +22,9 @@ abbr, acronym{ border: 0;}
 
 html{ font-size: 20px; height: 100%; overflow-y: scroll;}
 body{ background: white; font: 1em/1.5  'Open Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
-a{ border-bottom: 2px solid #ededed; color: #db4e44; cursor: pointer; text-decoration: none;}
+a{ border-bottom: 2px solid #ededed; color: #387B8C; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
-a:hover{ border-bottom-color: #db4e44;}
+a:hover{ border-bottom-color: #387B8C;}
 img{ max-width: 100%;}
 
 .post-introduction,
@@ -38,7 +38,7 @@ img{ max-width: 100%;}
 
 .header{ height: 6rem; position: relative;}
 .header h1{ font-size:32px;font-weight:bold;}
-.header h1 a{border-bottom:none;color:#242424;}
+.header h1 a{border-bottom:none;color:#444444;}
 .logo{ border-bottom: none;  height: 6rem; left: -8rem; position: absolute; top: 0;}
 .home { font-size:1.5rem; line-height:2rem; font-weight:bold; border-bottom:none;}
 .nav{ font-size: 1.3125rem; line-height: 2rem; padding: 2rem 0;}
@@ -60,9 +60,9 @@ img{ max-width: 100%;}
 .hey,
 .title{ font-size: 1.8125rem; line-height: 1.25; margin-top: 3rem;}
 .hey strong,
-.title strong{ color: #242424;}
+.title strong{ color: #444;}
 .hey span,.title span,.skills span,
-.hey a{ color: #db4e44;}
+.hey a{ /*color: #db4e44;*/color:#387B8C}
 .skills{ margin-top:2rem;}
 .skills p{ font-size:1.3rem; margin-bottom:1rem;}
 .gallery,.footer{ color: #b5b5b5; margin-top: 5rem;}
@@ -76,7 +76,7 @@ img{ max-width: 100%;}
 
 
 .list{ position: relative;margin-top:3rem;}
-
+.list small{font-size:0.7rem;color:#b5b5b5;}
 .articles{ margin-top:3rem;}
 .articles hr{ border: none; height: 2rem;}
 
@@ -87,15 +87,15 @@ img{ max-width: 100%;}
 .post-title{ font-size: 1.5rem; line-height: 1.125;}
 .post-title a{ border-bottom: none; color: #4a4a4a;}
 .post-title a:visited{ color: #93a1a1;}
-.post-title a:hover{ color: #db4e44;}
+.post-title a:hover{ color: #387B8C;}
 .post-introduction{ color: #93a1a1; font-size: 0.875rem; margin-top: 0.25em;}
 
 .colophon p{margin-top:2rem;}
 .articles .post:hover .post-info,
-.single .post-info:hover{ color: #242424;}
+.single .post-info:hover{ color: #444444;}
 
 .single{ margin-top: 3rem; position: relative;}
-.single .post-title{ color: #242424; font-size: 2rem; font-weight: bold; line-height: 1.125;}
+.single .post-title{ color: #444444; font-size: 2rem; font-weight: bold; line-height: 1.125;}
 .single .post-introduction{ font-size: 1.125rem; margin: 1rem 0 3rem;}
 .single .post-info,
 .post-back{ font-size: 0.875rem; line-height: 1.5rem; position: absolute; right: 45rem; text-align: right; width: 8rem;}
@@ -104,7 +104,7 @@ img{ max-width: 100%;}
 .post-back a:hover{ color: #4a4a4a;}
 .post-back span{ font-size: 11px; margin-right: 2px;}
 
-.post-content{ color: #242424;}
+.post-content{ color: #444444;}
 .post-content h2{ font-size: 1.8125rem; font-weight: bold; line-height: 1.125; margin-top: 2em;}
 .post-content h3,
 .subtitle{ color: #839496; font-size: 1.5rem; font-weight: bold; line-height: 1.125; margin-top: 2em;}
@@ -116,7 +116,7 @@ img{ max-width: 100%;}
 .post-content figure img{max-width:80%;}*
 .post-content ul li{ position:relative;}
 /*.post-content ul li:before{ color: #93a1a1; content: '-'; left: -1.25rem; position: absolute; top: 4px;}*/
-.post-content blockquote{ border-left: 4px solid #db4e44; color: #7a7a7a; font-style: italic; margin: 2rem 0; padding: 0 2rem;}
+.post-content blockquote{ border-left: 4px solid #387B8C; color: #7a7a7a; font-style: italic; margin: 2rem 0; padding: 0 2rem;}
 .post-content blockquote p{ margin: 0;}
 .post-content table{ font-size: 0.875rem; width: 100%;}
 .post-content th,
@@ -143,7 +143,7 @@ img{ max-width: 100%;}
 .item span{ color: #93a1a1; font-size: 1.5rem; font-weight: bold; line-height: 1.125; margin-right: 2rem; position: absolute; right: 100%; text-align: right; top: 2rem;}
 /*.item img{ float: left; left: 0; max-width: 220px; position: absolute; top: 2rem;}*/
 .item img{max-width:80%; padding-top:1rem; padding-bottom:1rem;}
-.item h2{ color: #242424; font-size: 1.5rem; font-weight: bold; line-height: 1.125;}
+.item h2{ color: #444444; font-size: 1.5rem; font-weight: bold; line-height: 1.125;}
 .item h3{ color: #93a1a1; font-size: 0.875rem; margin-top: 0.25em;}
 .item p{ font-size: 0.875rem; margin-top: 1em;}
 .item ul{ font-size: 0.875rem; list-style: outside disc; margin: 1em 2em;}

@@ -5,17 +5,26 @@ nav: home
 ---
 
 
-<div class="hey">
-  <h1>I love making things <strong><span>better</span></strong>, more <strong><span>useful</span></strong> and <span>fun</span>. It doesn’t matter if that might be big or small.</h1>
+<div class="hey" style="padding-top:10px;">
+  <h1><strong>Software engineer</strong>,
+    codes in <strong>python</strong>,
+    clicks <a href="http://photos.ravigopalkesari.com/">photographs</a>
+    and makes little <a href="http://youtube.com/rvgpl/">videos</a>.
+    </h1>
 </div>
 
-
-<div class="skills">
-<small style="color:#b5b5b5;">Spend most of my time everyday on</small>
-  <p><strong>HTML5+CSS3. Javascript. jQuery. Express + node.js. </strong><br>
-  UI/UX prototyping <strong>&</strong> design with <a href="http://bohemiancoding.com/sketch">Sketch</a> and <a href="http://framerjs.com/">framer.js</a></p>
-  <p>I click <a href="http://photos.ravigopalkesari.com/">photographs</a>, make little <a href="http://youtube.com/rvgpl/">videos</a> and fiddle with <a href="https://www.raspberrypi.org/">Raspberry Pi</a> in my free time.</p>
-  <p>Tweet to me <a href="http://twitter.com/rvgpl/"> @rvgpl</a> or shoot a mail to <a href="mailto:hello@ravigopalkesari.com">hello@ravigopalkesari.com</a>.
+<div class="list">
+  <small>Recent posts</small>
+    {% for post in site.posts limit:2 %}
+    <article class="post {{ post.category | downcase }}">
+      <h2 class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      {% if post.introduction %}
+        <p class="post-introduction">{{ post.introduction }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
 </div>
 
 <footer class="footer">
