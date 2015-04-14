@@ -1,3 +1,5 @@
+
+
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{ margin: 0; padding: 0;}
 table{ border-collapse: collapse; border-spacing: 0;}
 fieldset, img{ border: 0; max-width: 100%;}
@@ -21,7 +23,7 @@ abbr, acronym{ border: 0;}
 */
 
 html{ font-size: 20px; height: 100%; overflow-y: scroll;}
-body{ background: white; font: 1em/1.5  'Open Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
+body{ background: white; font: 1em/1.5  'Josefin Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
 a{ border-bottom: 2px solid #ededed; color: #387B8C; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
 a:hover{ border-bottom-color: #387B8C;}
@@ -32,15 +34,15 @@ img{ max-width: 100%;}
 .ideas p,
 .item h3,
 .item p,
-.item ul{ font-family: 'Open Sans', Arial, sans-serif;}
+.item ul{ font-family: 'Josefin Sans', Arial, sans-serif;}
 .post-content h2,
-.post-content h3{ font-family: 'Open Sans', Arial, sans-serif;}
+.post-content h3{ font-family: 'Josefin Sans', sans-serif;font-weight:600;}
 
 .header{ height: 6rem; position: relative;}
-.header h1{ font-size:32px;font-weight:bold;}
+.header h1{ font-family: 'Josefin Sans', sans-serif;font-size:32px;font-weight:600;text-transform:uppercase;}
 .header h1 a{border-bottom:none;color:#444444;}
 .logo{ border-bottom: none;  height: 6rem; left: -8rem; position: absolute; top: 0;}
-.home { font-size:1.5rem; line-height:2rem; font-weight:bold; border-bottom:none;}
+.home { font-size:1.5rem; line-height:2rem; font-weight:600; border-bottom:none;}
 .nav{ font-size: 1.3125rem; line-height: 2rem; padding: 2rem 0;}
 .nav li{ display: inline; margin-right: 2rem;}
 .nav a{ color: #93a1a1;}
