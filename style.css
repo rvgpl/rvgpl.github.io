@@ -161,7 +161,7 @@ a,
 .tooltip{ transition: opacity 125ms ease-out;}
 
 @media (max-width: 1159px) {
-  html{ font-size: 16px;}
+  html{ font-size: 20px;}
   .icons{right: 5rem;  top: 5rem;}
 }
 
