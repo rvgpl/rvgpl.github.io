@@ -22,8 +22,8 @@ abbr, acronym{ border: 0;}
 
 */
 
-html{ font-size: 20px; height: 100%; overflow-y: scroll;}
-body{ background: white; font: 1em/1.5  'Josefin Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
+html{ font-size: 22px; height: 100%; overflow-y: scroll;}
+body{ background: whitesmoke; font: 1em/1.7  'Josefin Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
 a{ border-bottom: 2px solid #ededed; color: #387B8C; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
 a:hover{ border-bottom-color: #387B8C;}
@@ -36,10 +36,10 @@ img{ max-width: 100%;}
 .item p,
 .item ul{ font-family: 'Josefin Sans', Arial, sans-serif;}
 .post-content h2,
-.post-content h3{ font-family: 'Josefin Sans', sans-serif;font-weight:600;}
+.post-content h3{ font-family: 'Josefin Sans', sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:0.1rem;}
 
 .header{ height: 6rem; position: relative;}
-.header h1{ font-family: 'Josefin Sans', sans-serif;font-size:32px;font-weight:600;text-transform:uppercase;}
+.header h1{ font-family: 'Josefin Sans', sans-serif;font-size:1.5rem;font-weight:600;letter-spacing:0.1rem;text-transform:uppercase;}
 .header h1 a{border-bottom:none;color:#444444;}
 .logo{ border-bottom: none;  height: 6rem; left: -8rem; position: absolute; top: 0;}
 .home { font-size:1.5rem; line-height:2rem; font-weight:600; border-bottom:none;}
@@ -86,7 +86,7 @@ img{ max-width: 100%;}
 .post{ margin-bottom: 1.5rem; position: relative;padding:1rem; border-bottom:1px solid #b5b5b5;}
 .post-info{ color: #dbdbdb; float: right; font-size: 0.875rem; margin: 0.2rem 0 0 2em; text-align: right;}
 .post-date, .post-category{ display: block;}
-.post-title{ font-size: 1.5rem; line-height: 1.125;}
+.post-title{ font-size: 1.5rem; line-height: 1.125;letter-spacing:0.1rem;}
 .post-title a{ border-bottom: none; color: #4a4a4a;}
 .post-title a:visited{ color: #93a1a1;}
 .post-title a:hover{ color: #387B8C;}
@@ -97,8 +97,8 @@ img{ max-width: 100%;}
 .single .post-info:hover{ color: #444444;}
 
 .single{ margin-top: 3rem; position: relative;}
-.single .post-title{ color: #444444; font-size: 2rem; font-weight: bold; line-height: 1.125;}
-.single .post-introduction{ font-size: 1.125rem; margin: 1rem 0 3rem;}
+.single .post-title{ color: #444444; font-size: 2rem; font-weight: bold; line-height: 1.125;text-transform:uppercase;letter-spacing:0.1rem;}
+.single .post-introduction{ font-size: 1.1rem; margin: 0.1rem 0 3rem;}
 .single .post-info,
 .post-back{ font-size: 0.875rem; line-height: 1.5rem; position: absolute; right: 45rem; text-align: right; width: 8rem;}
 .single .post-info{ margin: 1px 0 0;}
@@ -107,9 +107,9 @@ img{ max-width: 100%;}
 .post-back span{ font-size: 11px; margin-right: 2px;}
 
 .post-content{ color: #444444;}
-.post-content h2{ font-size: 1.8125rem; font-weight: bold; line-height: 1.125; margin-top: 2em;}
+.post-content h2{ font-size: 1.8125rem; font-weight: bold; line-height: 1.125; margin-top: 2em;letter-spacing:0.1rem;text-transform:uppercase;}
 .post-content h3,
-.subtitle{ color: #839496; font-size: 1.5rem; font-weight: bold; line-height: 1.125; margin-top: 2em;}
+.subtitle{ font-size: 1.5rem; font-weight: bold; line-height: 1.125; margin-top: 2em;text-transform:uppercase;}
 .post-content p{ margin: 1em 0;}
 .post-content ul,
 .post-content ol{ margin: 1em 0 1em 1.5em;list-style: disc;}
@@ -140,15 +140,15 @@ img{ max-width: 100%;}
 .tabs li{ display: inline;}
 .tabs a{ display: inline-block; vertical-align: top;}
 
-.item{ border-top: 2px solid #ededed; min-height: 220px; padding: 2rem 0 2rem 2rem; position: relative;}
+.item{ border-bottom: 1px solid #b5b5b5; min-height: 220px; padding: 2rem 0 2rem 2rem; position: relative;}
 .item:after{ clear: both; content: ''; display: block;}
 .item span{ color: #93a1a1; font-size: 1.5rem; font-weight: bold; line-height: 1.125; margin-right: 2rem; position: absolute; right: 100%; text-align: right; top: 2rem;}
 /*.item img{ float: left; left: 0; max-width: 220px; position: absolute; top: 2rem;}*/
 .item img{max-width:80%; padding-top:1rem; padding-bottom:1rem;}
 .item h2{ color: #444444; font-size: 1.5rem; font-weight: bold; line-height: 1.125;}
 .item h3{ color: #93a1a1; font-size: 0.875rem; margin-top: 0.25em;}
-.item p{ font-size: 0.875rem; margin-top: 1em;}
-.item ul{ font-size: 0.875rem; list-style: outside disc; margin: 1em 2em;}
+.item p{ font-size: 1rem; margin-top: 1em;}
+.item ul{ font-size: 1rem; list-style: outside disc; margin: 1em 2em;}
 
 
 
