@@ -5,16 +5,13 @@ nav: home
 ---
 
 
-<div class="hey" style="padding-top:10px;">
-  <h1><strong>Software engineer</strong>. Writes code for bread,
-    clicks <a href="http://photos.ravigopalkesari.com/">photographs</a>
-    and makes little <a href="http://youtube.com/rvgpl/">videos</a> for butter.
-    </h1>
+<div class="hey">
+  <h1>Designer based in Bengaluru with expertise in front-end wizardry.</h1>
 </div>
 
 <div class="list">
   <small>Recent posts</small>
-    {% for post in site.posts limit:2 %}
+    {% for post in site.posts limit:3 %}
     <article class="post {{ post.category | downcase }}">
       <h2 class="post-title">
         <a href="{{ post.url }}">{{ post.title }}</a>
@@ -27,5 +24,12 @@ nav: home
 </div>
 
 <footer class="footer">
-  <p>2015 | <a href="/colophon">Colophon</a>.</p>
+  <nav class="nav">
+    <ul>
+      <li><a href="/journal">Journal</a></li>
+      <li><a href="http://flickr.com/photos/rvgpl/">Photography</a></li>
+      <li><a href="http://rvgpl.tumblr.com">Tumblr</a></li>
+    </ul>
+  </nav>
+  <p>2016 &nbsp; | &nbsp; <a href="/colophon">Colophon</a></p>
 </footer>

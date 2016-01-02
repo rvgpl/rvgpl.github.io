@@ -23,7 +23,7 @@ abbr, acronym{ border: 0;}
 */
 
 html{ font-size: 22px; height: 100%; overflow-y: scroll;}
-body{ background: whitesmoke; font: 1em/1.7  'Josefin Sans', sans-serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
+body{ background: white; font: 1em/1.7  'Source Sans Pro', serif; color: #4a4a4a; margin: 0 auto; padding: 3em 5em 5em 10em; position: relative; width: 43em;}
 a{ border-bottom: 2px solid #ededed; color: #387B8C; cursor: pointer; text-decoration: none;}
 a:visited{ color: #93a1a1;}
 a:hover{ border-bottom-color: #387B8C;}
@@ -34,37 +34,39 @@ img{ max-width: 100%;}
 .ideas p,
 .item h3,
 .item p,
-.item ul{ font-family: 'Josefin Sans', Arial, sans-serif;}
+.item ul{ font-family: 'Oxygen',serif;}
+.post-title {font-family: 'Fjalla One', sans-serif}
 .post-content h2,
-.post-content h3{ font-family: 'Josefin Sans', sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:0.1rem;}
+.post-content h3{ font-family: 'Fjalla One', sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:0.1rem;}
 
-.header{ height: 6rem; position: relative;}
-.header h1{ font-family: 'Josefin Sans', sans-serif;font-size:1.5rem;font-weight:600;letter-spacing:0.1rem;text-transform:uppercase;}
+.header{ height: 2rem; position: relative;}
+.header h1{ font-family: 'Fjalla One', sans-serif;font-size:1.5rem;font-weight:600;letter-spacing:0.1rem;text-transform:uppercase; width: 100%;}
 .header h1 a{border-bottom:none;color:#444444;}
 .logo{ border-bottom: none;  height: 6rem; left: -8rem; position: absolute; top: 0;}
 .home { font-size:1.5rem; line-height:2rem; font-weight:600; border-bottom:none;}
-.nav{ font-size: 1.3125rem; line-height: 2rem; padding: 2rem 0;}
+.nav{ font-size: 1rem; line-height: 2rem; padding: 0;}
 .nav li{ display: inline; margin-right: 2rem;}
 .nav a{ color: #93a1a1;}
 .nav a:hover{ color: #4a4a4a;}
 .nav .home a{border-bottom:none;}
 .nav .here a{ border-bottom: none; color: #4a4a4a;}
-.icons{ position: absolute; right: 5rem; text-align: right; top: 4.5rem;}
+/*.icons{ position: absolute; right: 5rem; text-align: right; top: 4.5rem;}
 .icons li{ display: inline;}
 .icons a{ border-bottom: none; color: #93a1a1; display: inline-block; float: left; font-size: 1.2rem; height: 2rem; line-height: 2rem; text-align: center; width: 2rem;}
   .icons a:hover{ color: #4a4a4a;}
   .icons .twitter:hover{ color: #55acee;}
   .icons .github:hover{ color: #333;}
   .icons .dribbble:hover{ color: #EA4C89;}
-  .icons .instagram:hover{ color: #B27D5D;}
+  .icons .instagram:hover{ color: #B27D5D;}*/
 
 
 .hey,
-.title{ font-size: 1.8125rem; line-height: 1.25; margin-top: 3rem;}
+.title{ font-family: 'Fjalla One', sans-serif; font-size: 1.5125rem; line-height: 1.5; margin-top: 3rem;}
 .hey strong,
-.title strong{ color: #444;}
+.title strong{ color: #387B8C;}
 .hey span,.title span,.skills span,
 .hey a{ /*color: #db4e44;*/color:#387B8C}
+.hey { background-color: #387B8C; color: white; margin-top: 40px;padding: 150px 20px 20px 20px;}
 .skills{ margin-top:2rem;}
 .skills p{ font-size:1.3rem; margin-bottom:1rem;}
 .gallery,.footer{ color: #b5b5b5; margin-top: 5rem;}
@@ -72,31 +74,32 @@ img{ max-width: 100%;}
 .gallery img{ vertical-align: middle;}
 
 
-.footer p{ font-size:0.7rem;}
+.footer p{ font-size:0.7rem;padding: 1rem;}
 .footer a{ color: #b5b5b5;}
 .footer a:hover{ color: #4a4a4a;}
 
 
 .list{ position: relative;margin-top:3rem;}
-.list small{font-size:0.7rem;color:#b5b5b5;}
+.list small{font-size:0.7rem;color:#b5b5b5;padding: 1rem;}
 .articles{ margin-top:3rem;}
 .articles hr{ border: none; height: 2rem;}
 
 
-.post{ margin-bottom: 1.5rem; position: relative;padding:1rem; border-bottom:1px solid #b5b5b5;}
+.post{ margin-bottom: 1.5rem; position: relative;padding:1rem;}
+.post::after {content:'';display: block;border-bottom:1px solid #b5b5b5; margin-top:1rem;}
 .post-info{ color: #dbdbdb; float: right; font-size: 0.875rem; margin: 0.2rem 0 0 2em; text-align: right;}
 .post-date, .post-category{ display: block;}
 .post-title{ font-size: 1.5rem; line-height: 1.125;letter-spacing:0.1rem;}
 .post-title a{ border-bottom: none; color: #4a4a4a;}
 .post-title a:visited{ color: #93a1a1;}
 .post-title a:hover{ color: #387B8C;}
-.post-introduction{ color: #93a1a1; font-size: 0.875rem; margin-top: 0.25em;}
+.post-introduction{ font-style: italic; color: #93a1a1; font-size: 0.775rem; margin-top: 0.25em;}
 
 .colophon p{margin-top:2rem;}
 .articles .post:hover .post-info,
 .single .post-info:hover{ color: #444444;}
 
-.single{ margin-top: 3rem; position: relative;}
+.single{ margin-top: 3rem; position: relative;padding: 1rem;}
 .single .post-title{ color: #444444; font-size: 2rem; font-weight: bold; line-height: 1.125;text-transform:uppercase;letter-spacing:0.1rem;}
 .single .post-introduction{ font-size: 1.1rem; margin: 0.1rem 0 3rem;}
 .single .post-info,
@@ -159,21 +162,26 @@ img{ max-width: 100%;}
 a,
 .post-info{ transition: 50ms ease-out; transition-property: border-color, color;}
 .tooltip{ transition: opacity 125ms ease-out;}
-
+@media (min-width: 929px) {
+  .header h1{float: left; width: 40%;}
+  .nav {line-height: 2.5rem;}
+  .footer {padding: 0 1rem;}
+  .footer p {padding: 0;}
+}
 @media (max-width: 1159px) {
   html{ font-size: 20px;}
-  .icons{right: 5rem;  top: 5rem;}
+  /*.icons{right: 5rem;  top: 5rem;}*/
 }
 
 @media (max-width: 929px) {
-  body{ padding: 2rem 1rem 5rem; margin: 0; width: auto;}
+  body{ padding: 2rem 0rem 5rem; margin: 0; width: auto;}
   .header{ height: auto; text-align: center;}
   .logo{ display: inline-block; position: static;}
-  .nav{ display: block; padding: 1rem 0; text-align: center;}
+  .nav{ display: block; text-align: left;}
   .nav li{ margin: 0 1rem;}
-  .icons{ margin: 1rem 0; position: static; text-align: center;}
+/*  .icons{ margin: 1rem 0; position: static; text-align: center;}
   .icons a{ float: none; font-size: 2rem; height: auto; margin: 0; width: auto;}
-  .icons li{ padding:10px;}
+  .icons li{ padding:10px;}*/
   .gallery ul{ text-align: center;}
   .gallery li{ display: inline-block; margin: 0.5rem 1rem 0;}
   .clients li{ height: 4rem; line-height: 4rem;}
