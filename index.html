@@ -1,35 +1,50 @@
----
-layout: default
-title: Life & Works of Ravigopal Kesari
-nav: home
----
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ravigopal Kesari</title>
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="Ravigopal Kesari">
+    <meta property="og:url" content="/index.html">
 
-<div class="hey">
-  <h1>Designer based in Bengaluru with expertise in front-end wizardry.</h1>
-</div>
+    <link rel="icon" type="image/png" href="/images/kesari-monogram.png">
 
-<div class="list">
-  <small>Recent posts</small>
-    {% for post in site.posts limit:3 %}
-    <article class="post {{ post.category | downcase }}">
-      <h2 class="post-title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h2>
-      {% if post.introduction %}
-        <p class="post-introduction">{{ post.introduction }}</p>
-      {% endif %}
-    </article>
-  {% endfor %}
-</div>
+    <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<footer class="footer">
-  <nav class="nav">
-    <ul>
-      <li><a href="/journal">Journal</a></li>
-      <li><a href="http://flickr.com/photos/rvgpl/">Photography</a></li>
-      <li><a href="http://rvgpl.tumblr.com">Tumblr</a></li>
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    <h1 class="site-logo">
+      <a href="#">Ravigopal Kesari</a>
+    </h1>
+
+    <section class="intro">
+      <p>A Visual enthusiast and software engineer who makes websites and applications.</p>
+      <p>Love minimalism, riding bikes, clicking photographs and playing with water colors.</p>
+      <p>Right now, I’m working at <a href="http://www.quintype.com">Quintype</a> on building a data-driven publishing platform for mobile-first media.</p>
+    </section>
+
+    <ul class="social">
+      <li><a class="twitter" href="http://www.twitter.com/rvgpl/">Twitter</a></li>
+      <li><a class="dribbble" href="http://www.dribbble.com/rvgpl/">Dribbble</a></li>
+      <li><a class="instagram" href="http://instagram.com/rvgpl/">Instagram</a></li>
+      <li><a class="flickr" href="http://flickr.com/photos/rvgpl">Flickr</a></li>
+      <li><a class="tumblr" href="http://rvgpl.tumblr.com/">Tumblr</a></li>
     </ul>
-  </nav>
-  <p>2016 &nbsp; | &nbsp; <a href="/colophon">Colophon</a></p>
-</footer>
+
+    <footer>
+      <p class="meta">© 2016 Ravigopal Kesari. <br> Hack Your World, Live Curious!</p>
+    </footer>
+
+  </div>
+  </body>
+</html>
