@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+      "react",
+      "jsx-a11y",
+      "import"
+  ],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": false
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "react/jsx-filename-extension": [0],
+    "react/no-danger": "off",
+    "react/prefer-stateless-function": "off",
+    "react/jsx-wrap-multilines": "off"
+  }
+}
+

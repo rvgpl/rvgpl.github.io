@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff;
+  color: #1d3653;
+}
+a,
+button {
+  text-decoration: none;
+  font: inherit;
+  letter-spacing: inherit;
+  border: 0;
+  cursor: pointer;
+  color: #4a90e2;
+  background-image: linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    #4a90e2 0,
+    #4a90e2 2px,
+    transparent 0
+  );
+}
+.site-logo {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  stroke: currentColor;
+}
+
+@keyframes draw {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 1000;
+    stroke-width: 2px;
+  }
+
+  100% {
+    fill: currentColor;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}
