@@ -41,7 +41,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Lora\:400,700`
+          `Lora\:400,700`,
+          `Spectral\:400,400i,700`
         ]
       }
     },
