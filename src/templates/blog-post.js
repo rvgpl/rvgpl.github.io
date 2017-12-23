@@ -3,20 +3,60 @@ import Helmet from "react-helmet";
 import get from "lodash/get";
 import styled from "styled-components";
 import Container from "../styled/container";
+import Link from "gatsby-link";
+import StyledLink from "../styled/StyledLink";
 
 const BlogPostTemplate = props => {
   const post = props.data.markdownRemark;
   const siteTitle = get(props, "data.site.siteMetadata.title");
 
   return (
-    <Container className="blog-post">
-      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+    <BlogPostContainer>
+      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`}
+      
+      meta={[
+        { name: 'description', content: `${post.frontmatter.intro}` },
+        { property: 'og:type', content: 'website' },
+        {
+          property: 'og:url',
+          content: `https://rvgpl.xyz/${post.frontmatter.path}`
+        },
+        {
+          property: 'og:title',
+          content: `${post.frontmatter.title} | ${siteTitle}`
+        },
+        {
+          property: 'og:description',
+          content: `${post.frontmatter.intro}`
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary'
+        },
+        {
+          name: 'twitter:site',
+          content: '@rvgpl'
+        },
+        {
+          name: 'twitter:creator',
+          content: '@rvgpl'
+        },
+        {
+          name: 'twitter:title',
+          content: `${post.frontmatter.title} | ${siteTitle}`
+        },
+        {
+          name: 'twitter:description',
+          content: `${post.frontmatter.intro}`
+        }
+      ]} />
       <Title>{post.frontmatter.title}</Title>
       <Article
         // eslint-disable-next-line
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
-    </Container>
+      <StyledLinkWrapper to={"/thoughts"}>← Back to Thoughts</StyledLinkWrapper>
+    </BlogPostContainer>
   );
 };
 
@@ -48,14 +88,21 @@ const Title = styled.h1`
 `;
 
 const Article = styled.article`
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   line-height: 1.5;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 
   blockquote {
     border-left: 0.5rem solid black;
     margin-left: 0;
     padding-left: 1rem;
+    font-size: 2.8rem;
+    margin-bottom: 2.25em;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
   }
 
   p,
@@ -122,4 +169,21 @@ const Article = styled.article`
   small {
     font-size: 0.889em;
   }
+  img {
+    border-radius: 0.5rem;
+  }
+  img + em {
+    display: block;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+`;
+const StyledLinkWrapper = styled(StyledLink)`
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 2rem 0;
+`;
+
+const BlogPostContainer = styled(Container)`
+  padding-bottom: 5rem;
 `;

@@ -21,10 +21,6 @@ const Intro = () => (
 
 const Wrapper = styled.section`
   margin-top: 5rem;
-
-  ${breakpoint.tablet`
-    margin-top: 10rem;
-  `};
 `;
 
 

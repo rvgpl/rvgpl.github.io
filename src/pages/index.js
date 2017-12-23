@@ -7,6 +7,9 @@ import Container from "../styled/container";
 import Intro from "../components/Intro";
 import SocialLinks from "../components/SocialLinks";
 import SectionTitle from "../styled/SectionTitle";
+import bikeImage from "../assets/bike-ride.jpg";
+import InstagramFeed from "../components/InstagramFeed";
+import breakpoint from "../styled/breakpoint";
 
 const Home = props => {
   const pageLinks = [];
@@ -32,19 +35,20 @@ const Home = props => {
 
   return (
     <Container>
-    
       <Helmet>
        <title>{siteTitle}</title>
        <meta name="description" content={get(this, 'props.data.site.siteMetadata.description')} />
       </Helmet>
-
+      <HeroImage src={bikeImage} alt="rvgpl on a bike" />
       <Intro />
       <SocialLinks />
       <hr />
-      { /** <BlogList>
+      <BlogList>
         <SectionTitle>Latest Posts</SectionTitle>
         {pageLinks}
-      </BlogList> */}
+      </BlogList>
+      <SectionTitle>Instagram</SectionTitle>
+      <InstagramFeed userId='rvgpl' />
     </Container>
   );
 };
@@ -114,5 +118,20 @@ const StyledLink = styled(Link)`
   &:hover,
   &:focus {
     background-size: 100% 88%;
+  }
+`;
+const HeroImage = styled.img`
+  border-radius: 1.6rem;
+  box-shadow: -1rem 1rem 0 rgba(0,0,0,.1);
+  filter: brightness(90%);
+  transition: all 0.5s ease-in-out;
+  
+  ${breakpoint.tablet`
+    filter: brightness(90%);
+    box-shadow: -2rem 2rem 0 rgba(0,0,0,.1);
+  `};
+
+  &:hover {
+    box-shadow: 2rem 2rem 0 rgba(0,0,0,.1);
   }
 `;

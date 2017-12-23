@@ -20,7 +20,7 @@ const SocialLinks = () => (
         <LinkWrapper href="http://www.flickr.com/rvgpl">Flickr</LinkWrapper>
       </SocialLink>
       <SocialLink>
-        <LinkWrapper href="mailto:kesariravigopal@gmail.com?Subject=Hello">
+        <LinkWrapper href="mailto:kesariravigopal+website@gmail.com?Subject=Hello">
           Email
         </LinkWrapper>
       </SocialLink>

@@ -11,11 +11,10 @@ const Header = () => (
         <Logo />
       </LogoWrapper>
 
-      {/** <Nav>
-         <NavItem to={"/about"}> About </NavItem>
-        <NavItem to={"/blog"}> Blog </NavItem>
-        <NavItem to={"/"}> Photos </NavItem>
-      </Nav> */}
+      <Nav>
+        <NavItem to={"/thoughts"}> Thoughts </NavItem>
+        <NavItem to={"/photos"}> Photos </NavItem>
+      </Nav>
     </HeaderContainer>
   </HeaderWrapper>
 );

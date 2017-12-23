@@ -10,11 +10,10 @@ const Template = props => {
   const { children } = props;
   return (
     <ThemeProvider theme={theme}>
-      <div>
+      <main>
         <Header />
         {children()}
-        { /**<Footer /> */}
-      </div>
+      </main>
     </ThemeProvider>
   );
 };

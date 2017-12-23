@@ -3,9 +3,11 @@ import Helmet from "react-helmet";
 import get from "lodash/get";
 import Link from "gatsby-link";
 import styled from "styled-components";
-import Container from "../../styled/container";
+import Container from "../styled/container";
+import SectionTitle from "../styled/SectionTitle";
+import SectionIntro from "../styled/SectionIntro";
 
-const Blog = props => {
+const Thoughts = props => {
   const pageLinks = [];
   const posts = get(props, "data.allMarkdownRemark.edges");
 
@@ -28,16 +30,17 @@ const Blog = props => {
 
   return (
     <Container>
-      <Helmet title={Blog} />
+      <Helmet title={Thoughts} />
       <BlogList>
-        <BlogListTitle>Posts</BlogListTitle>
+        <SectionTitle>Thoughts</SectionTitle>
+        <SectionIntro>I don’t write as often as I wish, hoping to change that.</SectionIntro>
         {pageLinks}
       </BlogList>
     </Container>
   );
 };
 
-export default Blog;
+export default Thoughts;
 
 export const pageQuery = graphql`
   query allPosts {
@@ -62,17 +65,12 @@ const BlogList = styled.ul`
   padding: 0;
   list-style-type: none;
   margin: 5rem auto;
+  min-height: 100%;
 `;
 
 const BlogListItem = styled.li`
   padding: 1.6rem 0;
   dispaly: block;
-`;
-
-const BlogListTitle = styled.small`
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16rem;
 `;
 
 const PostTitle = styled.h3`
