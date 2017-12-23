@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import _ from 'lodash';
 import styled from 'styled-components';
+import breakpoint from "../styled/breakpoint";
 
 class InstagramFeed extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class InstagramFeed extends React.Component {
   }
   render() {
     const images = _.map(_.take(this.state.images, 8), image => <ImageWrapper key={image.id}>
-    <a target="_blank" rel="noopener" href={`https://www.instagram.com/p/${image.code}`}><img src={image['thumbnail_src']} /></a></ImageWrapper>);
+    <a target="_blank" rel="noopener" href={`https://www.instagram.com/p/${image.code}`}><img src={image['thumbnail_resources'][0]['src']} /></a></ImageWrapper>);
     return (
       <ImagesContainer>
       {images}
@@ -44,8 +45,12 @@ const ImagesContainer = styled.ul`
 `;
 
 const ImageWrapper = styled.li`
-  flex-basis: 25%;
+  flex-basis: 50%;
   transition: all 0.3s ease;
+
+  ${breakpoint.tablet`
+    flex-basis: 25%;
+  `}
 
   a {
     background: none;
