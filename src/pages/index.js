@@ -20,10 +20,13 @@ const Home = props => {
     if (post.node.path !== "/404/") {
       const title = get(post, "node.frontmatter.title", post.node.path);
       const intro = get(post, "node.frontmatter.intro", "");
+      const date = get(post,"node.frontmatter.date", "");
+
       const pageLink = (
         <BlogListItem key={title}>
           <PostTitle>
             <StyledLink to={post.node.frontmatter.path}>{title}</StyledLink>
+            <PostDate>{date}</PostDate>
           </PostTitle>
           <PostExcerpt dangerouslySetInnerHTML={{ __html: intro }} />
         </BlogListItem>
@@ -72,6 +75,7 @@ export const pageQuery = graphql`
             path
             title
             intro
+            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
@@ -96,6 +100,9 @@ const PostTitle = styled.h3`
   font-family: ${props => props.theme.primaryTypeface};
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const PostExcerpt = styled.p`
@@ -120,6 +127,7 @@ const StyledLink = styled(Link)`
     background-size: 100% 88%;
   }
 `;
+
 const HeroImage = styled.img`
   border-radius: 1.6rem;
   box-shadow: -1rem 1rem 0 rgba(0,0,0,.1);
@@ -134,4 +142,12 @@ const HeroImage = styled.img`
   &:hover {
     box-shadow: 2rem 2rem 0 rgba(0,0,0,.1);
   }
+`;
+
+const PostDate = styled.time`
+  font-family: ${props => props.theme.georgiaTypeface};
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.4rem;
+  color: #777;
 `;
