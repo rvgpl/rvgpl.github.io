@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import breakpoint from './breakpoint';
+import styled from "styled-components";
+import breakpoint from "./breakpoint";
 
 const SectionIntro = styled.h2`
   color: ${props => props.theme.primaryColor};

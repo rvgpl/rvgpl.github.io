@@ -3,7 +3,6 @@ import Helmet from "react-helmet";
 import get from "lodash/get";
 import styled from "styled-components";
 import Container from "../styled/container";
-import Link from "gatsby-link";
 import StyledLink from "../styled/StyledLink";
 
 const BlogPostTemplate = props => {
@@ -12,44 +11,45 @@ const BlogPostTemplate = props => {
 
   return (
     <BlogPostContainer>
-      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`}
-      
-      meta={[
-        { name: 'description', content: `${post.frontmatter.intro}` },
-        { property: 'og:type', content: 'website' },
-        {
-          property: 'og:url',
-          content: `https://rvgpl.xyz/${post.frontmatter.path}`
-        },
-        {
-          property: 'og:title',
-          content: `${post.frontmatter.title} | ${siteTitle}`
-        },
-        {
-          property: 'og:description',
-          content: `${post.frontmatter.intro}`
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary'
-        },
-        {
-          name: 'twitter:site',
-          content: '@rvgpl'
-        },
-        {
-          name: 'twitter:creator',
-          content: '@rvgpl'
-        },
-        {
-          name: 'twitter:title',
-          content: `${post.frontmatter.title} | ${siteTitle}`
-        },
-        {
-          name: 'twitter:description',
-          content: `${post.frontmatter.intro}`
-        }
-      ]} />
+      <Helmet
+        title={`${post.frontmatter.title} | ${siteTitle}`}
+        meta={[
+          { name: "description", content: `${post.frontmatter.intro}` },
+          { property: "og:type", content: "website" },
+          {
+            property: "og:url",
+            content: `https://rvgpl.xyz/${post.frontmatter.path}`
+          },
+          {
+            property: "og:title",
+            content: `${post.frontmatter.title} | ${siteTitle}`
+          },
+          {
+            property: "og:description",
+            content: `${post.frontmatter.intro}`
+          },
+          {
+            name: "twitter:card",
+            content: "summary"
+          },
+          {
+            name: "twitter:site",
+            content: "@rvgpl"
+          },
+          {
+            name: "twitter:creator",
+            content: "@rvgpl"
+          },
+          {
+            name: "twitter:title",
+            content: `${post.frontmatter.title} | ${siteTitle}`
+          },
+          {
+            name: "twitter:description",
+            content: `${post.frontmatter.intro}`
+          }
+        ]}
+      />
       <Title>{post.frontmatter.title}</Title>
       <Article
         // eslint-disable-next-line
@@ -184,6 +184,4 @@ const StyledLinkWrapper = styled(StyledLink)`
   margin: 2rem 0;
 `;
 
-const BlogPostContainer = styled(Container)`
-  padding-bottom: 5rem;
-`;
+const BlogPostContainer = styled(Container)`padding-bottom: 5rem;`;

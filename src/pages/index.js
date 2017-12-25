@@ -20,7 +20,7 @@ const Home = props => {
     if (post.node.path !== "/404/") {
       const title = get(post, "node.frontmatter.title", post.node.path);
       const intro = get(post, "node.frontmatter.intro", "");
-      const date = get(post,"node.frontmatter.date", "");
+      const date = get(post, "node.frontmatter.date", "");
 
       const pageLink = (
         <BlogListItem key={title}>
@@ -39,8 +39,11 @@ const Home = props => {
   return (
     <Container>
       <Helmet>
-       <title>{siteTitle}</title>
-       <meta name="description" content={get(this, 'props.data.site.siteMetadata.description')} />
+        <title>{siteTitle}</title>
+        <meta
+          name="description"
+          content={get(this, "props.data.site.siteMetadata.description")}
+        />
       </Helmet>
       <HeroImage src={bikeImage} alt="rvgpl on a bike" />
       <Intro />
@@ -51,7 +54,7 @@ const Home = props => {
         {pageLinks}
       </BlogList>
       <SectionTitle>Instagram</SectionTitle>
-      <InstagramFeed userId='rvgpl' />
+      <InstagramFeed userId="rvgpl" />
     </Container>
   );
 };
@@ -130,17 +133,17 @@ const StyledLink = styled(Link)`
 
 const HeroImage = styled.img`
   border-radius: 1.6rem;
-  box-shadow: -1rem 1rem 0 rgba(0,0,0,.1);
+  box-shadow: -1rem 1rem 0 rgba(0, 0, 0, 0.1);
   filter: brightness(90%);
   transition: all 0.5s ease-in-out;
-  
+
   ${breakpoint.tablet`
     filter: brightness(90%);
     box-shadow: -2rem 2rem 0 rgba(0,0,0,.1);
   `};
 
   &:hover {
-    box-shadow: 2rem 2rem 0 rgba(0,0,0,.1);
+    box-shadow: 2rem 2rem 0 rgba(0, 0, 0, 0.1);
   }
 `;
 

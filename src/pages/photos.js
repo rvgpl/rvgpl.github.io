@@ -1,36 +1,49 @@
 import React from "react";
 import Helmet from "react-helmet";
-import Link from "gatsby-link";
 import styled from "styled-components";
 import Container from "../styled/container";
 import SectionTitle from "../styled/SectionTitle";
 import SectionIntro from "../styled/SectionIntro";
-import InstagramFeed from "../components/InstagramFeed";
 import BreakOut from "../styled/BreakOut";
 
+const Photos = () => (
+  <Container>
+    <Helmet>
+      <title>Photography | Ravigopal Kesari</title>
+      <meta name="description" content="Photography by Ravigopal Kesari" />
+    </Helmet>
+    <HeroImageWrapper>
+      <HeroImage
+        srcSet="https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f_n.jpg 320w,
+        https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f.jpg 500w, https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f_b.jpg 1024w,https://farm6.staticflickr.com/5715/22799147249_3c8af1a9fd_h.jpg 1600w"
+        src="https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f.jpg"
+        alt="Early morning scene of Pigeons flying"
+      />
+    </HeroImageWrapper>
+    <SectionTitle>Photos</SectionTitle>
+    <SectionIntro>
+      Through practice, I’ve reach the point where I’ve gain confidence in
+      presenting myself as a photographer.
+    </SectionIntro>
+    <PhotoDesc>
+      {" "}
+      I continue to learn new techniques everyday and getting comfortable with
+      the intricacies of this process of capturing light.
+    </PhotoDesc>
+    <Text>
+      I do photoshoots for material things like fancy food, nice paperback books
+      etc. I enjoy candid photography and shooting portraits. If you fancy a
+      photoshoot, feel free to contact me{" "}
+      <a href="https://www/twitter.com/@rvgpl">@rvgpl</a>.
+    </Text>
 
-const Photos = props => {
-  const pageLinks = [];
-
-  return (
-    <Container>
-      <Helmet>
-       <title>Photography | Ravigopal Kesari</title>
-       <meta name="description" content="Photography by Ravigopal Kesari" />
-      </Helmet>
-      <HeroImageWrapper>
-        <HeroImage srcSet="https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f_n.jpg 320w,
-        https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f.jpg 500w, https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f_b.jpg 1024w,https://farm6.staticflickr.com/5715/22799147249_3c8af1a9fd_h.jpg 1600w" src="https://farm6.staticflickr.com/5715/22799147249_1bba8e0c2f.jpg" alt="Early morning scene of Pigeons flying" />
-      </HeroImageWrapper> 
-      <SectionTitle>Photos</SectionTitle>
-      <SectionIntro>Through practice, I’ve reach the point where I’ve gain confidence in presenting myself as a photographer.</SectionIntro>
-      <PhotoDesc> I continue to learn new techniques everyday and getting comfortable with the intricacies of this process of capturing light.</PhotoDesc>
-      <Text>I do photoshoots for material things like fancy food, nice paperback books etc. I enjoy candid photography and shooting portraits. If you fancy a photoshoot, feel free to contact me <a href="https://www/twitter.com/@rvgpl">@rvgpl</a>.</Text>
-
-      <Text>Do check out my photography, on <a href="https://www.flickr.com/rvgpl">Flickr</a> and <a href="https://www.instagram.com/rvgpl">Instagram</a>.</Text>
-    </Container>
-  );
-};
+    <Text>
+      Do check out my photography, on{" "}
+      <a href="https://www.flickr.com/rvgpl">Flickr</a> and{" "}
+      <a href="https://www.instagram.com/rvgpl">Instagram</a>.
+    </Text>
+  </Container>
+);
 
 export default Photos;
 

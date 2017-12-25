@@ -19,10 +19,7 @@ const Intro = () => (
   </Wrapper>
 );
 
-const Wrapper = styled.section`
-  margin-top: 5rem;
-`;
-
+const Wrapper = styled.section`margin-top: 5rem;`;
 
 const Name = styled.strong`
   display: inline-block;

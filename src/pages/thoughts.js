@@ -36,7 +36,9 @@ const Thoughts = props => {
       <Helmet title={Thoughts} />
       <BlogList>
         <SectionTitle>Thoughts</SectionTitle>
-        <SectionIntro>I don’t write as often as I wish, hoping to change that.</SectionIntro>
+        <SectionIntro>
+          I don’t write as often as I wish, hoping to change that.
+        </SectionIntro>
         {pageLinks}
       </BlogList>
     </Container>
