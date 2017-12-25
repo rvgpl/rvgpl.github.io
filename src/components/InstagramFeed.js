@@ -23,8 +23,14 @@ class InstagramFeed extends React.Component {
     .catch(error => console.error(error));
   }
   render() {
-    const images = _.map(_.take(this.state.images, 8), image => <ImageWrapper key={image.id}>
-    <a target="_blank" rel="noopener" href={`https://www.instagram.com/p/${image.code}`}><img src={image['thumbnail_resources'][0]['src']} /></a></ImageWrapper>);
+    const images = _.map(_.take(this.state.images, 8), image => (
+      <ImageWrapper key={image.id}>
+        <a target="_blank" rel="noopener" href={`https://www.instagram.com/p/${image.code}`}>
+          <img srcSet={_.map(image['thumbnail_resources'], thumbnail => `${thumbnail.src} ${thumbnail.config_width}w`)}
+          src={image['thumbnail_src']}/>
+        </a>
+      </ImageWrapper>)
+  );
     return (
       <ImagesContainer>
       {images}
