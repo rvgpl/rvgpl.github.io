@@ -117,6 +117,10 @@ const Article = styled.article`
     overflow: auto;
   }
 
+  code {
+    color: #905;
+  }
+
   li {
     & ol {
       padding-bottom: 0;
@@ -139,7 +143,9 @@ const Article = styled.article`
     margin: 0;
     font-family: ${props => props.theme.primayTypeface};
   }
-  p {
+  p,
+  ul,
+  ol {
     font-family: ${props => props.theme.georgiaTypeface};
   }
   h1 {
@@ -169,10 +175,12 @@ const Article = styled.article`
   small {
     font-size: 0.889em;
   }
-  img {
+
+  .gatsby-resp-image-wrapper {
     border-radius: 0.5rem;
   }
-  img + em {
+
+  .gatsby-resp-image-wrapper + em {
     display: block;
     text-align: center;
     font-size: 1.6rem;
