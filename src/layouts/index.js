@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import theme from "../styled/theme";
 import "../css/global.css";
+import "../css/prism.css";
 
 const Template = props => {
   const { children } = props;
