@@ -95,7 +95,7 @@ const Article = styled.article`
   blockquote {
     border-left: 0.5rem solid black;
     margin-left: 0;
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-size: 2.8rem;
     margin-bottom: 2.25em;
 
