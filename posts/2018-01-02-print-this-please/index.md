@@ -1,7 +1,7 @@
 ---
 title: Print This, Please!
 path: /print-this-please/
-date: 2018-01-02T19:01:34.0530Z
+date: 2018-01-02T19:01:34.530Z
 intro: Thoughts and learnings about writing stylesheets for articles on the web
 ---
 
@@ -121,7 +121,7 @@ A few concerns when printing articles when they are media heavy.
  - __Images__. The above css makes the images full width and with no page break, you end up printing a lot of paper.
  - __Videos__. A video from Youtube will look like a black box with a video icon on it, there nothing the user can do about with it. We can't just hide the video and use the after pseudo element to add the link as you can't add after elements to iframes. One of the ways to fix this would be to use javascript and fetch the cover image of the youtube video and use a `img` tag and append a link to youtube video.
 
-![A black box is shown when you print a Youtube video](./youtube-video-print.jpg)
+![A black box is shown when you print a Youtube video](/images/youtube-video-print.jpg)
 *A black box is shown when you print a Youtube video*
 
 If you are interested in seeing how a print version of an article or a website looks like, you can use Chrome DevTools and trigger print media query. Go to *Settings> More Tools> Rendering> Emulate CSS Media> print*.
