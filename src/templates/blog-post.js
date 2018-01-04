@@ -141,7 +141,7 @@ const Article = styled.article`
     padding-bottom: 0.37em;
     line-height: 1.125;
     margin: 0;
-    font-family: ${props => props.theme.primayTypeface};
+    font-family: ${props => props.theme.primaryTypeface};
   }
   p,
   ul,
