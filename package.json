@@ -7,7 +7,7 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
-    "clean": "rm -rf ./public",
+    "clean": "rm -rf ./public ./.cache",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public -b master",
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
