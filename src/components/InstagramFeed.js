@@ -8,7 +8,7 @@ class InstagramFeed extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: []
+      images: [],
     };
     this.INSTAGRAM_URL = `https://www.instagram.com/${this.props.userId}?__a=1`;
     this.fetchImages = this.fetchImages.bind(this);
@@ -20,26 +20,24 @@ class InstagramFeed extends React.Component {
   fetchImages() {
     axios
       .get(this.INSTAGRAM_URL)
-      .then(response =>
-        this.setState({ images: response.data.user.media.nodes })
-      )
-      .catch(error => console.error(error)); //eslint-disable-line
+      .then((response) => {
+        this.setState({
+          images: response.data.graphql.user.edge_owner_to_timeline_media.edges,
+        });
+      })
+      .catch((error) => console.error(error)); //eslint-disable-line
   }
   render() {
-    const images = _.map(_.take(this.state.images, 8), image => (
-      <ImageWrapper key={image.id}>
+    const images = _.map(_.take(this.state.images, 8), (image) => (
+      <ImageWrapper key={image.node.id}>
         <a
           target="_blank"
           rel="noopener"
-          href={`https://www.instagram.com/p/${image.code}`}
+          href={`https://www.instagram.com/p/${image.node.shortcode}`}
         >
           <img
-            srcSet={_.map(
-              image.thumbnail_resources,
-              thumbnail => `${thumbnail.src} ${thumbnail.config_width}w`
-            )}
-            src={image.thumbnail_src}
-            alt={image.caption ? image.caption : ""}
+            src={image.node.thumbnail_src}
+            alt={image.node.accessibility_caption}
           />
         </a>
       </ImageWrapper>
