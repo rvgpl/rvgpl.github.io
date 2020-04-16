@@ -7,11 +7,11 @@ import Container from "../styled/container";
 import SectionTitle from "../styled/SectionTitle";
 import SectionIntro from "../styled/SectionIntro";
 
-const Thoughts = props => {
+const Thoughts = (props) => {
   const pageLinks = [];
   const posts = get(props, "data.allMarkdownRemark.edges");
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     if (post.node.path !== "/404/") {
       const title = get(post, "node.frontmatter.title", post.node.path);
       const intro = get(post, "node.frontmatter.intro", "");
@@ -33,7 +33,7 @@ const Thoughts = props => {
 
   return (
     <Container>
-      <Helmet title={Thoughts} />
+      <Helmet title="Thoughts" />
       <BlogList>
         <SectionTitle>Thoughts</SectionTitle>
         <SectionIntro>
@@ -82,7 +82,7 @@ const BlogListItem = styled.li`
 const PostTitle = styled.h3`
   font-size: 3rem;
   line-height: 1.25;
-  font-family: ${props => props.theme.primaryTypeface};
+  font-family: ${(props) => props.theme.primaryTypeface};
   margin: 0;
   padding: 0;
   display: flex;
@@ -96,11 +96,11 @@ const PostExcerpt = styled.p`
   font-size: 2rem;
   margin: 1.6rem 0;
   padding: 0;
-  font-family: ${props => props.theme.georgiaTypeface};
+  font-family: ${(props) => props.theme.georgiaTypeface};
 `;
 
 const StyledLink = styled(Link)`
-  color: ${props => props.theme.primaryColor};
+  color: ${(props) => props.theme.primaryColor};
   background-image: linear-gradient(to right, gold 0%, gold 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.5rem;
@@ -113,7 +113,7 @@ const StyledLink = styled(Link)`
   }
 `;
 const PostDate = styled.time`
-  font-family: ${props => props.theme.georgiaTypeface};
+  font-family: ${(props) => props.theme.georgiaTypeface};
   font-style: italic;
   font-weight: normal;
   font-size: 1.4rem;
