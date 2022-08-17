@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Container from "../styled/container";
 import SectionTitle from "../styled/SectionTitle";
 import SectionIntro from "../styled/SectionIntro";
+import breakpoint from "../styled/breakpoint";
 
 const Thoughts = (props) => {
   const pageLinks = [];
@@ -76,7 +77,7 @@ const BlogList = styled.ul`
 
 const BlogListItem = styled.li`
   padding: 1.6rem 0;
-  dispaly: block;
+  display: block;
 `;
 
 const PostTitle = styled.h3`
@@ -86,8 +87,15 @@ const PostTitle = styled.h3`
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+
+  ${breakpoint.tablet`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  `}
 `;
 
 const PostExcerpt = styled.p`
@@ -101,6 +109,9 @@ const PostExcerpt = styled.p`
 
 const StyledLink = styled(Link)`
   color: ${(props) => props.theme.primaryColor};
+  background-image: none;
+
+  ${breakpoint.tablet`
   background-image: linear-gradient(to right, gold 0%, gold 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.5rem;
@@ -111,6 +122,7 @@ const StyledLink = styled(Link)`
   &:focus {
     background-size: 100% 88%;
   }
+`};
 `;
 const PostDate = styled.time`
   font-family: ${(props) => props.theme.georgiaTypeface};

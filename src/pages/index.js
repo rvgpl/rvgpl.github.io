@@ -11,12 +11,12 @@ import bikeImage from "../assets/bike-ride.jpg";
 import InstagramFeed from "../components/InstagramFeed";
 import breakpoint from "../styled/breakpoint";
 
-const Home = props => {
+const Home = (props) => {
   const pageLinks = [];
   const siteTitle = get(props, "data.site.siteMetadata.title");
   const posts = get(props, "data.allMarkdownRemark.edges");
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     if (post.node.path !== "/404/") {
       const title = get(post, "node.frontmatter.title", post.node.path);
       const intro = get(post, "node.frontmatter.intro", "");
@@ -100,12 +100,19 @@ const BlogListItem = styled.li`
 const PostTitle = styled.h3`
   font-size: 3rem;
   line-height: 1.25;
-  font-family: ${props => props.theme.primaryTypeface};
+  font-family: ${(props) => props.theme.primaryTypeface};
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+
+  ${breakpoint.tablet`
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  `}
 `;
 
 const PostExcerpt = styled.p`
@@ -114,21 +121,25 @@ const PostExcerpt = styled.p`
   font-size: 2rem;
   margin: 1.6rem 0;
   padding: 0;
-  font-family: ${props => props.theme.georgiaTypeface};
+  font-family: ${(props) => props.theme.georgiaTypeface};
 `;
 
 const StyledLink = styled(Link)`
-  color: ${props => props.theme.primaryColor};
-  background-image: linear-gradient(to right, gold 0%, gold 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.5rem;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
+  color: ${(props) => props.theme.primaryColor};
+  background-image: none;
 
-  &:hover,
-  &:focus {
-    background-size: 100% 88%;
-  }
+  ${breakpoint.tablet`
+background-image: linear-gradient(to right, gold 0%, gold 100%);
+background-repeat: no-repeat;
+background-size: 100% 0.5rem;
+background-position: 0 88%;
+transition: background-size 0.25s ease-in;
+
+&:hover,
+&:focus {
+  background-size: 100% 88%;
+}
+`};
 `;
 
 const HeroImage = styled.img`
@@ -148,7 +159,7 @@ const HeroImage = styled.img`
 `;
 
 const PostDate = styled.time`
-  font-family: ${props => props.theme.georgiaTypeface};
+  font-family: ${(props) => props.theme.georgiaTypeface};
   font-style: italic;
   font-weight: normal;
   font-size: 1.4rem;

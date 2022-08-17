@@ -1,55 +1,67 @@
 import React from "react";
-import axios from "axios";
 import _ from "lodash";
 import styled from "styled-components";
 import breakpoint from "../styled/breakpoint";
+import image1 from "../assets/insta-photos/1-w400.jpeg";
+import image2 from "../assets/insta-photos/2-w400.jpeg";
+import image3 from "../assets/insta-photos/3-w400.jpeg";
+import image4 from "../assets/insta-photos/4-w400.jpeg";
+import image5 from "../assets/insta-photos/5-w400.jpeg";
+import image6 from "../assets/insta-photos/6-w400.jpeg";
+import image7 from "../assets/insta-photos/7-w400.jpeg";
+import image8 from "../assets/insta-photos/8-w400.jpeg";
 
-class InstagramFeed extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      images: [],
-    };
-    this.INSTAGRAM_URL = `https://www.instagram.com/${this.props.userId}?__a=1`;
-    this.fetchImages = this.fetchImages.bind(this);
-  }
-  componentDidMount() {
-    this.fetchImages();
-  }
-
-  fetchImages() {
-    axios
-      .get(this.INSTAGRAM_URL)
-      .then((response) => {
-        this.setState({
-          images: response.data.graphql.user.edge_owner_to_timeline_media.edges,
-        });
-      })
-      .catch((error) => console.error(error)); //eslint-disable-line
-  }
-  render() {
-    const images = _.map(_.take(this.state.images, 8), (image) => (
-      <ImageWrapper key={image.node.id}>
-        <a
-          target="_blank"
-          rel="noopener"
-          href={`https://www.instagram.com/p/${image.node.shortcode}`}
-        >
-          <img
-            src={image.node.thumbnail_src}
-            alt={image.node.accessibility_caption}
-          />
+const InstagramFeed = () => {
+  return (
+    <ImagesContainer>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image1} alt="People walking in Mysore resort" />
         </a>
       </ImageWrapper>
-    ));
-    return <ImagesContainer>{images}</ImagesContainer>;
-  }
-}
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image2} alt="A man walking light/shadow" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image3} alt="City traffic in Abu Dhabi" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image4} alt="People walking in Yas Mall, Abu dhabi" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image5} alt="View of Vizag beach" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image6} alt="Eye macro shot using iPhone 13 Pro" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image7} alt="Street lamps and sunset in the background" />
+        </a>
+      </ImageWrapper>
+      <ImageWrapper>
+        <a target="_blank" rel="noopener" href="https://instagram.com/rvgpl">
+          <img src={image8} alt="Robots chilling at Dubai Expo 2020" />
+        </a>
+      </ImageWrapper>
+    </ImagesContainer>
+  );
+};
 
 export default InstagramFeed;
 
 const ImagesContainer = styled.ul`
-  padding: 0;
+  padding: 0 0 30px 0;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -60,9 +72,17 @@ const ImagesContainer = styled.ul`
 const ImageWrapper = styled.li`
   flex-basis: 50%;
   transition: all 0.3s ease;
-
+  max-width: 250px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
   a {
     background: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
   &:hover {
@@ -71,10 +91,12 @@ const ImageWrapper = styled.li`
 
   img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
   ${breakpoint.tablet`
     flex-basis: 25%;
+    max-width: 200px;
   `};
 `;

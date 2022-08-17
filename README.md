@@ -1,3 +1,3 @@
-##rvgpl.xyz
+##ravigopal.com
 
 Personal site
