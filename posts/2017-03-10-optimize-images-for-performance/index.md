@@ -9,8 +9,6 @@ Almost every time I’m visit new site to try out a new product or read a blog, 
 
 The fastest way to increase the performance of any site is to losslessly compress images that are being displayed. In fact, it’s so easy, anyone on your team, regardless of coding experience, can make a dent in improving performance.
 
-[![distribution of loading times in the top 100 newspaper websites](/images/load-time-distribution.png)](https://royal.pingdom.com/web-perf-worlds-top-100-newspapers/)
-*distribution of loading times in the top 100 newspaper websites*
 
 ### Compressing images should be automatic
 The [average page size](https://speedcurve.com/blog/web-performance-page-bloat/) is 3 MB, with the majority of that weight coming from images. So if the bulk of a site is images, we should be focusing on image optimization before we focus on things like database indexing, caching, or other more advanced forms of performance optimization.
